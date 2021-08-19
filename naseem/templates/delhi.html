@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+marquee
+		{
+			font-size: 60px;
+			font-family: verdana;
+			color: red;
+		}
+		a.btn
+		{
+	display: block;
+    background-color: #9ed034;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 11px;
+    text-decoration: none;
+}
+  a.btn:hover {
+    background-color: #90be2c;
+		}
+</style>
+</head>
+<body>
+<marquee>Welcome To Delhi Hotels</marquee>
+
+<div class="row">
+  <div class="column">
+    <img src="{% static 'images/Luxury.jpg' %}" alt="destination 1" height="240px">
+    <a href="#" class="btn">₹1,700 Book Now</a>
+  </div>
+  <div class="column">
+    <img src="{% static 'images/Luxury2.jpg' %}" alt="destination 1" height="240px">
+    <a href="#" class="btn">₹1,700 Book Now</a>
+  </div>
+  <div class="column">
+  	<img src="{% static 'images/Luxury1.jpg' %}" alt="destination 1" height="240px">
+     <a href="#" class="btn">₹1,700 Book Now</a>
+  </div>
+  <div class="column">
+    <img src="{% static 'images/Luxury3.jpg' %}" alt="destination 1" height="240px">
+    <a href="#" class="btn">₹1,700 Book Now</a>
+  </div>
+  <div class="column">
+    <img src="{% static 'images/Luxury4.webp' %}" alt="destination 1" height="240px" width="425px">
+    <a href="#" class="btn">₹1,700 Book Now</a>
+  </div>
+  <div class="column">
+    <img src="{% static 'images/Luxury5.jpg' %}" alt="destination 1" height="240px" width="430px">
+    <a href="#" class="btn">₹1,700 Book Now</a>
+  </div>
+</div>
+
+</body>
+</html>
